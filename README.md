@@ -1,5 +1,5 @@
 ## ABOUT THE APP
-This app create an questionary about differents positions to apply in prodigious.
+This app create an questionary about differents positions to apply in HHRR department.
 
 ## WHAT TECHNOLOGIES ARE using
 -angular2
