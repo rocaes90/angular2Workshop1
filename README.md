@@ -13,7 +13,8 @@ This app create an questionary about differents positions to apply in HHRR depar
 ```
 
 ## DEPENDENCIES FOR THE PROJECT 
- "dependencies": {
+```
+"dependencies": {
     "@angular/common": "2.0.0-rc.6",
     "@angular/compiler": "2.0.0-rc.6",
     "@angular/compiler-cli": "0.6.0",
@@ -52,8 +53,10 @@ This app create an questionary about differents positions to apply in HHRR depar
     "vinyl-source-stream": "^1.1.0",
     "watchify": "^3.9.0"
   },
+```
 
 ## ABOUT STRUCTURE
+```
 1. APP - FOLDER: all the code (.ts files) (modules, services, entities, styles)
     1. CONFIG - FOLDER: config parameters
     2. ENTITIES - FOLDER: objects, structures
@@ -74,6 +77,7 @@ This app create an questionary about differents positions to apply in HHRR depar
             5. clean
 4. NODE_MODULES - FOLDER: Libraries for the application
 5. TYPINGS - FOLDER: typingsapplication
+```
 
 ## RUN INDICATIONS
 
