@@ -1,0 +1,114 @@
+@import "./variables";
+
+.questionContainer {
+	//background-color: $green_p;
+	min-height: 300px;
+}
+.questions {
+	padding: 0px 10px 20px 10px;
+}
+.titleSec {
+	text-align: center;
+    text-align: left;
+    color: $blue_p;
+	font-family: $baseFont;
+	font-size: 35px;
+}
+li {
+	list-style-type: none;
+	cursor: pointer;
+}
+li.queoption {
+    color: $gray_p;
+    padding: 0px 0px 0px 0px;
+	font-family: $baseFont;
+	font-size: 33px;
+	.answers {
+		padding: 0px 0px 0px 20px;		
+    	margin: 0 0 30px 0;
+	}
+}	
+li.ansoption {
+    color: $gray_p;
+    padding: 0px 70px 0px 20px;
+	font-family: $baseFont;
+	font-size: 28px;
+	span.texto {
+		margin: 0px 0px 0px 20px;
+	}	
+}	
+li.ansoption::before {
+	content: "";
+	height: 20px;
+	width: 20px;
+	background-color: transparent; 
+	border: solid 1px $gray_p;
+	display: inline-block;
+}
+.txtRed {
+	background-color: red;
+}
+.txtBlue {
+	background-color: blue;
+}
+.ansSel {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e2e2e2+0,bcbcbc+48,9b9b9b+99 */
+	//background: #e2e2e2; /* Old browsers */
+	//background: -moz-linear-gradient(left,  #e2e2e2 0%, #bcbcbc 48%, #9b9b9b 99%); /* FF3.6-15 */
+	//background: -webkit-linear-gradient(left,  #e2e2e2 0%,#bcbcbc 48%,#9b9b9b 99%); /* Chrome10-25,Safari5.1-6 */
+	//background: linear-gradient(to right,  #e2e2e2 0%,#bcbcbc 48%,#9b9b9b 99%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#9b9b9b',GradientType=1 ); /* IE6-9 */
+
+	//background-color: #d9d9d9;
+	//font-size: 35px !important;
+	color: $green_p !important;	
+}
+.ansSel::before {
+	background-color: $green_p !important; 
+}
+
+.btnNextQuestion {
+	width: 115px;
+    height: 60px;
+    background-color: $green_p;
+    position: absolute; 
+    color: $white;
+	font-family: $baseFont;
+	display: inline-block;	
+}
+.btnNextQuestion-container {	
+    display: inline-block;
+	float: left;
+    width: 120px;
+    height: 80px;
+}
+.container-msgnoanswer {		
+    display: inline-block;
+    width: 50%;
+    height: 80px;
+    margin: 0;
+	font-size: 25px;
+	p {
+		margin: 30px 0 0 50px;
+		color: $red_p;
+	}
+}
+.pendingAnswers {
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff0c24+8,ffffff+100 */
+	// background: #ff0c24; /* Old browsers */
+	// background: -moz-radial-gradient(center, ellipse cover,  #ff0c24 8%, #ffffff 100%); /* FF3.6-15 */
+	// background: -webkit-radial-gradient(center, ellipse cover,  #ff0c24 8%,#ffffff 100%); /* Chrome10-25,Safari5.1-6 */
+	// background: radial-gradient(ellipse at center,  #ff0c24 8%,#ffffff 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	// filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff0c24', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+}
+
+.cat-finish {
+	color: $purple_p;
+	font-family: $baseFont;
+	font-size: 45px;
+	width: 440px;
+	margin: auto;
+}
+.nodisplay {
+	visibility: hidden;
+}

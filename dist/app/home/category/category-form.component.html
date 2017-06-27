@@ -1,0 +1,12 @@
+<h2 class="titleSec">{{title}}</h2>
+<ul class="categories">
+	<li class="selecter catoption" 
+		[class.catSel]="i == isActive"
+		[class.catFinish]="isComplete(i)"
+		*ngFor="let category of CategoryList; let i = index" 
+		#elem [id]="i"
+		(click)="onSelectCategory(category, i)">
+	  <span class="texto">{{category.name}}</span>
+	</li>	
+</ul>	
+<!--<button type="button" class="btn btn-default btnSignInGreen" (click)="sendMessage()">VALUES</button>-->

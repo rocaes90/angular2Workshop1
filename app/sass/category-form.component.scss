@@ -1,0 +1,42 @@
+@import "./variables";
+
+.titleSec {
+    text-align: center;
+    color: $blue_p;
+	font-family: $baseFont;
+	font-size: 35px;
+}
+ul.categories {	
+	padding-left: 0px; 
+	li {
+		list-style-type: none;	
+		cursor: pointer;
+		//color: white;
+	}
+	li.catoption {
+		height: 80px;
+		text-align: center;
+		color: white;
+		margin: 0px 0px 0px 0px;
+		font-family: $baseFont;
+		font-size: 33px;
+		text-align: center;
+		padding: 5% 0 0 0;
+		background: $red_p;
+		margin-bottom: 2px;
+	}	
+	.catSel {
+		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#cca3a3+0,cc8282+100 */
+		//background: #cca3a3; /* Old browsers */
+		//background: -moz-linear-gradient(left,  #cca3a3 0%, #cc8282 100%); /* FF3.6-15 */
+		//background: -webkit-linear-gradient(left,  #cca3a3 0%,#cc8282 100%); /* Chrome10-25,Safari5.1-6 */
+		//background: linear-gradient(to right,  #cca3a3 0%,#cc8282 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		//filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cca3a3', endColorstr='#cc8282',GradientType=1 ); /* IE6-9 */
+		background-color: $yellow_p !important;
+		color: $white !important;
+	}
+}
+.catFinish {
+	background-color: $gray_p !important;
+	color: $white !important;
+}

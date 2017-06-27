@@ -1,0 +1,58 @@
+@import "./variables";
+@media only screen and (max-width: 1025px)  {	
+    .container {
+        width: 460px;
+        .txtSession {
+            font-size: 40px;
+            margin: 0px;
+        }        
+        .btnSignIn {
+            font-size: 26px;
+            width: 180px;
+            height: 80px;	
+        }
+        .btnReset {
+            width: 180px;
+            height: 80px;
+            font-size: 26px;
+        }
+        .btnExit {
+            font-size: 26px;	
+        }
+        .lblFormated {	
+            font-size: 26px;
+        }
+        .form-control {	
+            font-size: 26px;
+            height: 55px;
+        }
+    }	
+    .container2 {
+        .cont-left {
+            .row {
+                .subTitleForm {
+                    font-size: 25px;
+                }
+                .pull-left {
+                    font-size: 25px;
+                }
+            }
+        }
+        .cont-right {
+		    width: 50%; 
+            .btnSignIn {
+                margin: 0px;
+                width: 190px;
+                height: 80px;
+            }
+            .btnExit {
+                margin: 0px;
+                width: 190px;
+                height: 80px;
+            }
+            .btn {
+                font-size: 25px;
+            }
+        }
+    }
+}

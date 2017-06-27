@@ -1,0 +1,67 @@
+<div id="home-container"	
+	[class.hiddeDiv]="!showContainer">
+	<h1 class="home-title">{{title}}</h1>
+	<div id="start">
+		<ul class="positions">
+		<li class="selecter" *ngFor="let position of Positions"(click)="onSelectPosition(position)">
+		  <span class="badge">{{position.id}}</span> 
+		  <span class="texto">{{position.name}}</span>
+		</li>
+		</ul>	
+		<div class="selectedPosition" *ngIf="selectedPosition">			
+			<!--<h2>{{selectedPosition.name}} details!</h2>
+			<div class="detailsSelected">
+	      		<label>Position Name: </label>
+	      		<input [(ngModel)]="selectedPosition.name" #name placeholder="name"/>
+	    	</div>
+		  	<span class="txt">Identification Number:</span><br>
+		  	<input type="text" name="idNumber"><br>
+		  	<span class="txt">Name:</span><br>
+		  	<input type="text" name="personname">--> 	
+	  	</div> 
+	  	<user-form 	  	
+	  	(outUserInfo)='inputUserInfo($event)'	  	
+	  	(outPosition)='inputPosition($event)'	  	
+	  	[inpPositions]='Positions'
+	  	[inpCorrectQuestions]='g_correctQuestions'
+	  	[inpIncorrectQuestions]='g_incorrectQuestions'
+	  	[inpSelectedQuestion]='g_selectedQuestion'
+	  	class="userformClass"></user-form>
+	</div>
+	<div id="details" *ngIf="userInfoCorrect">
+		<div id="detleft">
+		  	<div class="categories">
+			  	<category-form  
+				(outShowMessage)='inputShowMessage($event)'
+			  	(outCategory)='inputCategory($event)' 
+			  	(outQuestQuantity)='inputQuestQuantity($event)' 
+			  	[inpPosKey]="currentPosition" 
+			  	class="categoryformClass"></category-form>	
+		  	</div> 			
+		</div>
+		<div id="detright">
+			<div class="questions">
+			  	<question-form 
+			  	(outCategoryFinished)='inputCategoryFinished($event)' 
+			  	(outCorrectQuestions)='inputCorrectQuestions($event)' 
+			  	(outIncorrectQuestions)='inputIncorrectQuestions($event)' 
+			  	(outSelectedQuestion)='inputSelectedQuestion($event)' 
+			  	[inpCatKey]="currentCategory" 
+			  	[inpQuestQuantity]="questQuantity"
+			  	class="categoryformClass"></question-form>	
+		  	</div> 
+		</div>
+	</div>
+	<!--{{inpFinishedCategory}} <br>
+	Correct Questions: {{g_correctQuestions}} <br>
+	Incorrect Questions: {{g_incorrectQuestions}} <br>-->
+</div>
+<div id="home-container2" 
+	class="hiddeDiv"
+	[class.showDiv]="showContainer2">
+	<p class="msg">
+		Thanks for your time<br>
+		We'll be in touch
+	</p>
+	<button class="btn btn-default btnOk" (click)="sendok()">OK!</button>
+</div>

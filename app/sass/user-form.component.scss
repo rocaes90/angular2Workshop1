@@ -1,0 +1,114 @@
+@import "./variables";
+
+.ng-valid[required], .ng-valid.required  {
+  	border-left: 5px solid #00cc00; /* green */
+}
+.ng-invalid:not(form)  {
+	border-left: 5px solid #ff0000; /* red */
+}
+
+.container {
+	background-color: #ffffff; 
+	width: 333px;
+	.txtSession {
+		font-family: $baseFont;
+		color: $blue_p;
+		text-align: center;
+		margin: 0 0 25px 0;
+	}
+	.btnSignIn {
+		margin: 10px 0 0 0;
+		width: 150px;
+	    height: 60px;
+	    background-color: $green_p;
+	    position: absolute; 
+	    color: $white;
+		font-family: $baseFont;
+		display: inline-block;
+		position: relative;	
+	}
+	.btnReset {
+		margin: 10px 0 0 0;
+		width: 150px;
+	    height: 60px;
+	    background-color: $yellow_p;
+	    position: absolute;
+	    color: #ffffff;
+		font-family: $baseFont;
+		font-size: 16px;
+		display: inline-block;
+		position: relative;	
+		float: right;
+	}
+	.btnExit {
+		//display: none !important;
+		margin: 10px 0 0 0;
+		width: 150px;
+	    height: 60px;
+	    background-color: $orange_p;
+	    position: absolute;
+	    color: #ffffff;
+		font-family: $baseFont;
+		font-size: 16px; 
+		display: inline-block;
+		position: relative;	
+	}
+	.lblFormated {	
+		font-family: $baseFont;
+		font-size: 16px;
+		color: $purple_p;
+	}
+}
+.container2 {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+    margin-bottom: 10px;
+	.cont-left {
+		float: left;
+		width: 48%;
+		.row {
+			.subTitleForm {
+				font-family: $baseFont;
+				color: $purple_p;
+				font-size: 18px;
+			}
+			.pull-left {
+				font-family: $baseFont;
+				font-size: 18px;
+			}
+		}
+	}
+	.cont-right {
+		float: right;
+		width: 40%;   
+		text-align: right; 
+		.btnSignIn {
+			margin: 10px 0 0 0;
+			width: 150px;
+			height: 60px;
+			background-color: $green_p;
+			position: absolute; 
+			color: $white;
+			font-family: $baseFont;
+			display: inline-block;
+			position: relative;	
+		}
+		.btnExit {
+			//display: none !important;
+			margin: 10px 0 0 0;
+			width: 150px;
+			height: 60px;
+			background-color: $orange_p;
+			position: absolute;
+			color: #ffffff;
+			font-family: $baseFont;
+			font-size: 16px; 
+			display: inline-block;
+			position: relative;	
+		}
+	}
+	#txtCont {		
+		font-family: $baseFont;
+	}	
+}

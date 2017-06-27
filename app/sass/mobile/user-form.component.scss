@@ -1,0 +1,30 @@
+@import "./variables";
+@media only screen and (max-width: 600px)  {	
+    .container {
+        width: 100%;
+        .txtSession {
+            font-size: 22px;
+            margin: 0px 0px 30px 0px;
+        }        
+        .btnSignIn {
+            font-size: 26px;
+            width: 49%;
+            height: 80px;	
+        }
+        .btnReset {
+            width: 49%;
+            height: 80px;
+            font-size: 16px;
+        }
+        .btnExit {
+            font-size: 16px;	
+        }
+        .lblFormated {	
+            font-size: 16px;
+        }
+        .form-control {	
+            font-size: 16px;
+            height: 30px;
+        }
+    }	
+}

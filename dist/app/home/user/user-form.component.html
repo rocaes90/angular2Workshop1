@@ -1,0 +1,62 @@
+<div id="contUser" class="container" [hidden]="submitted">
+    <h3 class="txtSession">SESSION INFORMATION</h3>
+    <form *ngIf="active" (ngSubmit)="onSubmit()" #userForm="ngForm">
+      <!--{{diagnostic}}-->
+      
+      <div class="form-group">
+        <label class="lblFormated" for="name">Number Id</label>
+        <input type="text" class="form-control" id="id"
+        required
+        [(ngModel)]="model.id" name="id" >
+      </div>
+
+      <div class="form-group">
+        <label class="lblFormated" for="name">Name</label>
+        <input type="text" class="form-control" id="name"
+        required
+        [(ngModel)]="model.name" name="name" >
+      </div>
+
+      <!--<div class="form-group">
+        <label class="lblFormated" for="score">Score</label>
+        <input type="text" class="form-control" id="score" 
+        [(ngModel)]="model.score" name="score" >
+      </div>-->
+
+      <div class="form-group">
+        <label class="lblFormated" for="power">Position</label>
+        <select class="form-control" id="position" 
+        required 
+        [(ngModel)]="model.position" name="position">
+          <option *ngFor="let p of inpPositions" [value]="p.id">{{p.name}}</option>
+        </select>
+      </div>
+      <button type="submit" class="btn btn-default btnSignIn" 
+      [disabled]="!userForm.form.valid">Sign In</button>
+      <button type="button" class="btn btn-default btnReset" (click)="newUser()">Reset</button>
+    </form>
+</div>
+<div class="container2" [hidden]="!submitted">
+  <div class="cont-left">
+    <div class="row">
+      <div class="col-xs-4 subTitleForm">ID Number</div>
+      <div class="col-xs-8 pull-left">{{ model.id }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 subTitleForm">Name:</div>
+      <div class="col-xs-8  pull-left">{{ model.name }}</div>
+    </div>
+    <div class="row">
+      <div class="col-xs-4 subTitleForm">Position</div>
+      <div class="col-xs-8 pull-left">{{ positionName }}</div>
+    </div>
+  </div> 
+  <br>
+  <div class="cont-right">
+    <button class="btn btn-default btnSignIn" (click)="send()">SEND RESULTS</button>
+    <button class="btn btn-default btnExit" (click)="exit()">Exit</button>
+  </div>   
+	<!--Correct Questions: {{inpCorrectQuestions}} <br>
+	Incorrect Questions: {{inpIncorrectQuestions}} <br>
+  details: {{inpSelectedQuestion}}-->
+</div>

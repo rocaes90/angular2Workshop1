@@ -1,0 +1,115 @@
+@import "./variables";
+
+#home-container {
+	background-color: $white;
+	.home-title {
+		color: green;
+		margin: auto;
+		text-align: center;
+		font-family: $baseFont;
+		margin: 50px 0 20px 0;
+		background: "./../images/divider.png" bottom repeat-x;
+	}
+	#start {		
+		margin: auto;
+		padding-bottom: 5px;
+		.positions {
+			display: none;
+			font-family: $baseFont;
+			.selecter {
+				list-style-type: none;
+				margin: 5px 0px 5px 0px;
+				padding: 5px 5px 5px 5px;
+				//color: #ffffff;
+				//color: #; 
+				.badge {
+				}
+				.texto {
+				}	
+			}
+		}
+		.selectedPosition {	
+			//display: none;
+			.txt {
+				font-family: $baseFont;				
+			}
+			input, h2 {
+				font-family: $baseFont;
+			}
+			.detailsSelected {
+				font-family: $baseFont;
+			}
+		}
+	}//start
+	#details {
+		border-top: 3px solid #ff0000;
+		min-height: 100px;
+		width: 90%;
+		margin: auto;
+		//background-color: pink;
+		height: auto;
+		overflow: hidden;
+		#detleft {
+			margin: 5px 0px 5px 0px;
+			width: 24%;
+			//background-color: green;
+			float: left;
+			height: auto;
+		}
+		#detright{
+			margin: 5px 0px 5px 0px;
+			width: 74%;
+			//background-color: red;
+			float: right;
+			height: 100%;
+			height: auto;
+		}
+	}
+	.categories {
+		//background-color: yellow;
+		min-height: 100px;
+		width: 100%;
+	}//categories
+}
+#home-container2 {
+	//background: red;
+	height: 400px;
+	width: 400px;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	p {
+		position: absolute;
+		top: 38%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);	
+	}
+	.msg {
+		font-family: "Titillium Web", sans-serif;    
+		text-align: center;
+		color: #11b6e0;
+		font-size: 36px;
+		width: 80%;
+	}
+	.btnOk {
+		margin: 10px 0 0 0;
+		width: 150px;
+		height: 60px;
+		background-color: $yellow_p;
+		position: absolute; 
+		color: $white;
+		font-family: $baseFont;
+		display: inline-block;
+		position: relative;	
+		top: 75%;
+		left: 50%;
+		transform: translateX(-50%) translateY(-50%);
+	}
+}
+.showDiv {
+	display: block !important;
+}
+.hiddeDiv {
+	display: none;
+}

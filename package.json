@@ -1,0 +1,62 @@
+{
+  "name": "RecruitmetSystem",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "tsc && concurrently \"npm run tsc:w\" \"npm run lite\" \"npm run build-css\" \"npm run watch-css\" ",
+    "lite": "lite-server",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "typings": "typings",
+    "build-css": "node-sass .\\app\\sass -o .\\app\\css ",
+    "watch-css": "nodemon --watch .\\app\\sass -e scss --exec npm run build-css "
+  },
+  "license": "ISC",
+  "dependencies": {
+    "@angular/common": "2.0.0-rc.6",
+    "@angular/compiler": "2.0.0-rc.6",
+    "@angular/compiler-cli": "0.6.0",
+    "@angular/core": "2.0.0-rc.6",
+    "@angular/forms": "2.0.0-rc.6",
+    "@angular/http": "2.0.0-rc.6",
+    "@angular/platform-browser": "2.0.0-rc.6",
+    "@angular/platform-browser-dynamic": "2.0.0-rc.6",
+    "@angular/router": "3.0.0-rc.2",
+    "@angular/upgrade": "2.0.0-rc.6",
+    "angular2-in-memory-web-api": "0.0.18",
+    "bootstrap": "^3.3.6",
+    "browser-sync": "^2.18.12",
+    "core-js": "^2.4.1",
+    "reflect-metadata": "^0.1.3",
+    "rxjs": "5.0.0-beta.11",
+    "systemjs": "0.19.27",
+    "zone.js": "^0.6.17"
+  },
+  "devDependencies": {
+    "@types/core-js": "^0.9.41",
+    "browserify": "^14.3.0",
+    "concurrently": "^2.2.0",
+    "firebase-tools": "^3.9.1",
+    "gulp-angular-templatecache": "^2.0.0",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-minify-html": "^1.0.6",
+    "gulp-notify": "^3.0.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-rename": "^1.2.2",
+    "lite-server": "^2.2.2",
+    "node-sass": "^3.9.3",
+    "nodemon": "^1.10.2",
+    "typescript": "^1.8.10",
+    "typings": "^1.5.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0",
+    "watchify": "^3.9.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/npm/npm.git"
+  },
+  "description": "package.json \r tsconfig.json \r typings.json \r systemjs.config.js",
+  "main": "systemjs.config.js",
+  "author": "Roiner Camacho"
+}

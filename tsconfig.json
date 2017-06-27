@@ -1,0 +1,37 @@
+{
+  "files": [
+        "app/*.ts",
+        "app/config/*.ts",
+        "app/entities/*.ts",
+        "app/home/*.ts",
+        "app/home/category/*.ts",
+        "app/home/question/*.ts",
+        "app/home/user/*.ts",
+        "app/js/*.ts",
+        "app/services/*.ts"
+  ],
+  "compilerOptions": {
+    "target": "es5",
+    "module": "system",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": false,
+    "noImplicitAny": true,
+    "suppressImplicitAnyIndexErrors": true
+  },
+  "exclude": ["node_modules", "./dist", "global.d.ts", "*.ts"]
+}
+
+// "compilerOptions": {
+//     "target": "es5",
+//     "module": "system",
+//     "moduleResolution": "node",
+//     "sourceMap": true,
+//     "emitDecoratorMetadata": true,
+//     "experimentalDecorators": true,
+//     "removeComments": false,
+//     "noImplicitAny": true,
+//     "suppressImplicitAnyIndexErrors": true
+//   },
