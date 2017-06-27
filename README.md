@@ -2,6 +2,7 @@
 This app create an questionary about differents positions to apply in HHRR department.
 
 ## WHAT TECHNOLOGIES ARE using
+```
 - angular2
 - gulp
 - sass
@@ -9,6 +10,7 @@ This app create an questionary about differents positions to apply in HHRR depar
 - browserify
 - emailjs
 - firebase
+```
 
 ## DEPENDENCIES FOR THE PROJECT 
  "dependencies": {
@@ -52,51 +54,49 @@ This app create an questionary about differents positions to apply in HHRR depar
   },
 
 ## ABOUT STRUCTURE
-APP - FOLDER: all the code (.ts files) (modules, services, entities, styles)
- CONFIG - FOLDER: config parameters
-  ENTITIES - FOLDER:    
-            objects, structures
-        HOME - FOLDER
-            home component where app start, its controlling all the others components 
-                category
-                question
-                user
-        JS - FOLDER
-            all the libraries and the third party libs.
-        SASS - FOLDER 
-            all the styles files 
-        SERVICES - FOLDER 
-            services for modules, differents functions using parameters and returning values
-DIST - FOLDER 
-    version to publish in the server
-GULP - FOLDER
-    gulp-tasks to copile and create the dist of the application
-        tasks.js - FILE: has tasks for 
-            copy files
-            build (files, sass, ts, html)
-            watch 
-            serve (developer version/only run server with the precompiled version) 
-            clean
-NODE_MODULES - FOLDER
-    Libraries for the application
-TYPINGS - FOLDER 
-    typingsapplication
+1. APP - FOLDER: all the code (.ts files) (modules, services, entities, styles)
+    1. CONFIG - FOLDER: config parameters
+    2. ENTITIES - FOLDER: objects, structures
+        1. HOME - FOLDER: home component where app start, its controlling all the others components 
+            1. category
+            2. question
+            3. user
+        2. JS - FOLDER: all the libraries and the third party libs.
+        3. SASS - FOLDER: all the styles files 
+        4. SERVICES - FOLDER: services for modules, differents functions using parameters and returning values
+2. DIST - FOLDER: version to publish in the server
+3. GULP - FOLDER: gulp-tasks to copile and create the dist of the application
+        1. tasks.js - FILE: has tasks for 
+            1. copy files
+            2. build (files, sass, ts, html)
+            3. watch 
+            4. serve (developer version/only run server with the precompiled version) 
+            5. clean
+4. NODE_MODULES - FOLDER: Libraries for the application
+5. TYPINGS - FOLDER: typingsapplication
 
 ## RUN INDICATIONS
+
+#### gulp clean commands 
+```
 gulp clean:all - delete all from app and node_modules folders
 gulp clean:nm - delete all from node_module folder
 gulp clean - delete all from js folder and html (components)
-
+````
+#### gulp build command
+```
 gulp build - make a build for the application 
-
+```
+#### gulp server command
+```
 gulp serve:dev - execute the clean, build and start the server
-
 gulp server:only - run the server, using the precompiled code
+```
 
 # USING FIREBASE
-
-firebase login
-
-firebase deploy -p dist 
-
-**firebase deploy --help
+Commands for firebase 
+```
+~firebase login
+~firebase deploy -p dist 
+~**firebase deploy --help
+```
