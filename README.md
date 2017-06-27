@@ -52,11 +52,9 @@ This app create an questionary about differents positions to apply in HHRR depar
   },
 
 ## ABOUT STRUCTURE
-APP - FOLDER 
-    all the code (.ts files) (modules, services, entities, styles)
-        CONFIG - FOLDER:
-            config parameters
-        ENTITIES - FOLDER:    
+APP - FOLDER: all the code (.ts files) (modules, services, entities, styles)
+ CONFIG - FOLDER: config parameters
+  ENTITIES - FOLDER:    
             objects, structures
         HOME - FOLDER
             home component where app start, its controlling all the others components 
