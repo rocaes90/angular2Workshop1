@@ -2,12 +2,13 @@
 This app create an questionary about differents positions to apply in HHRR department.
 
 ## WHAT TECHNOLOGIES ARE using
--angular2
--gulp
--sass
--liteserver
--browserify
--emailjs
+- angular2
+- gulp
+- sass
+- liteserver
+- browserify
+- emailjs
+- firebase
 
 ## DEPENDENCIES FOR THE PROJECT 
  "dependencies": {
