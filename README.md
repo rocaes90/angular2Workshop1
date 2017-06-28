@@ -102,7 +102,7 @@ gulp serve:dev - execute the clean, build and start the server
 gulp server:only - run the server, using the precompiled code
 ```
 
-# USING FIREBASE
+### USING FIREBASE
 Commands for firebase 
 ```
 ~firebase login
