@@ -1,7 +1,8 @@
 ## ABOUT THE APP
-This app create an questionary about differents positions to apply in HHRR department.
+I develop this app to learn about angular2, and it was working with Sass, Gulp, Firebase and emailjs. 
+App create a questionary, with differents positions to apply in HHRR department, each positions has a number of questions (like a wizard). When the user resolve all the categories he can send a email with the result, to a configured email.
 
-## WHAT TECHNOLOGIES ARE using
+## WHAT TECHNOLOGIES ARE USING
 ```
 - angular2
 - gulp
@@ -10,6 +11,7 @@ This app create an questionary about differents positions to apply in HHRR depar
 - browserify
 - emailjs
 - firebase
+- ES6
 ```
 
 ## DEPENDENCIES FOR THE PROJECT 
