@@ -3,10 +3,7 @@ I develop this app to learn about angular2, I also was working with: Sass, Gulp,
 I was looking for a required App in my actual job, so I create a questionary, with differents positions to apply in HHRR department, each positions has a number of questions (like a wizard). When the user resolve all the categories he can send a email with the result, to a configured email.
 
 ### To test the APP
-```
-Actually its hosted in Firebase:
-<https://recruitment-1b951.firebaseapp.com/>
-```
+Actually its hosted in Firebase: [Recruitment App - Angular2 : (https://recruitment-1b951.firebaseapp.com)](https://recruitment-1b951.firebaseapp.com)
 
 ## WHAT TECHNOLOGIES ARE USING
 ```
